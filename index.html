@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bhola Sweets</title>
+</head>
+<style>
+    header {
+        width: 100%;
+        height: 55px;
+        float: left;
+        box-sizing: border-box;
+        padding: 10px;
+
+
+    }
+
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+      h1{
+        color:rebeccapurple;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 200;
+    }
+    #brand_name {
+        padding: 0;
+        margin: 0;
+        font-family: 'Times New Roman', Times, serif;
+        float: left;
+
+    }
+
+    #tag_line {
+        float: right;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #nav {
+        width: 100%;
+        height: 110px;
+        background-color: blue;
+        float: left;
+        box-sizing: border-box;
+        padding: 30px;
+
+    }
+
+    #search {
+        width: 240px;
+        height: 40px;
+        float: left;
+        box-sizing: border-box;
+        font-size: 15px;
+        padding: 10px;
+
+    }
+
+    #search-btn {
+        width: 100px;
+        height: 40px;
+        float: left;
+        border: none;
+        margin-left: 3px;
+        font-size: 16px;
+    }
+
+    #menu_table {
+        width: 600px;
+        height: 40px;
+        float: right;
+        box-sizing: border-box;
+    }
+
+    #menu_item {
+        background-color: white;
+        width: 20%;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #section {
+        width: 100%;
+        height: 1200px;
+        float: left;
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid blue;
+
+    }
+
+    #venu {
+        float: left;
+    }
+
+    #phone {
+        float: right;
+    }
+
+    #popular-sweet-box {
+        width: 720px;
+        height: 600px;
+        float: left;
+        box-sizing: border-box;
+        background-color: black;
+        margin: 30px;
+        padding: 20px;
+
+    }
+
+    #popular-sweets-title {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+
+    #popular-sweet-img {
+        width: 300px;
+        height: 200px;
+        margin: 15px;
+    }
+
+    #rate_list_box {
+        width: 400px;
+        height: 550px;
+        box-sizing: border-box;
+        float: right;
+        margin-top: 30px;
+
+    }
+
+
+
+    #rate_header {
+        height: 50px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-family: century gothic;
+        font-size: 25px;
+    }
+
+    #rate_content {
+        background-color: blue;
+    }
+
+    #s_name {
+        color: white;
+        font-family: century gothic;
+        font-size: 22px;
+        padding: 10px;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: white;
+    }
+
+    #rate {
+        list-style: none;
+    }
+
+    fieldset {
+        width: 690px;
+        height: 550px;
+        float: left;
+        margin-top: 50px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #ccc;
+        padding: 10px;
+    }
+
+    legend {
+        font-family: century gothic;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #order_online {
+        font-size: 17px;
+        font-family: sans-serif;
+    }
+
+    #order_input {
+        width: 100%;
+        height: 35px;
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #ccc;
+        margin-top: 5px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #ccc;
+    }
+
+    #submit_btn {
+        padding: 10px;
+        font-size: 15px;
+        float: right;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #ccc;
+        background-color: white;
+    }
+
+    #abt_us {
+        width: 450px;
+        height: 550px;
+        float: right;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #ccc;
+        margin-top: 66px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #abt-title {
+        text-align: center;
+        font-family: century gothic;
+        font-size: 30px;
+    }
+
+    #abt_text {
+        text-align: justify;
+        font-family: sans-serif;
+        line-height: 25px;
+    }
+  
+    
+ /* Videos  */
+ .vid h1 {
+     text-align: center;
+     font-family: Segoe Script;
+     font-size: 12rem;
+ }
+
+ .vid {
+     display: block;
+
+ }
+
+ .vid ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+
+ }
+
+ .vid iframe {
+     width: 38rem;
+     height: 20rem;
+     margin: 1rem;
+     border-radius: 1.2rem;
+ }
+</style>
+
+<body>
+    <header>
+        <h1 id="brand_name">Bhola Sweets</h1>
+        <p id="tag_line">The world's largest Sweetshop & bakeries shop</p>
+
+    </header>
+    <nav id="nav">
+
+
+        <form>
+
+            <input type="search" name="search" placeholder="search your sweets here" id="search">
+            <input type="Submit" name="" id="search-btn" value="search">
+        </form>
+        <table id="menu_table">
+            <tr>
+                <td id="menu_item"><a href="#">Home</a></td>
+                <td id="menu_item"><a href="#">Sweets</a></td>
+                <td id="menu_item"><a href="#">Bakeries</a></td>
+                <td id="menu_item"><a href="#">About us</a></td>
+                <td id="menu_item"><a href="#">Contact us</a></td>
+            </tr>
+        </table>
+    </nav>
+    <section>
+        <address id="venue">
+            Venu:kaithal-136027,haryana
+
+        </address>
+        <address id="phone">
+            order online:91+9518831941,91+9812266588
+
+        </address>
+        <div id="popular-sweet-box">
+
+            <h1 id="popular-sweets-title">Our Popular Sweets</h1>
+
+            <img src="image/a.jpg" height="240px" width="270px" alt="a" id="popular-sweet-img" />
+            <img src="image/b.jpg" height="240px" width="270px" alt="b" id="popular-sweet-img" />
+            <img src="image/c.jpg" height="240px" width="270px" alt="c" id="popular-sweet-img" />
+            <img src="image/d.jpg" height="240px" width="270px" alt="d" id="popular-sweet-img" />
+
+        </div>
+        <table id="rate_list_box" border="1">
+            <tr>
+                <td id="rate_header">Sweets Name</td>
+                <td id="rate_header">Price</td>
+            </tr>
+            <tr>
+                <td id="rate_content">
+                    <ol>
+                        <li id="s_name">Rasgulla</li>
+                        <li id="s_name">Laddo</li>
+                        <li id="s_name">Barfee</li>
+                        <li id="s_name">Rasmalai</li>
+                        <li id="s_name">Besan Ladoo</li>
+                        <li id="s_name">Moong Dal Halwa</li>
+                        <li id="s_name">Kaju Katli</li>
+                        <li id="s_name">​Sooji Halwa</li>
+                        <li id="s_name">​Ghevar</li>
+                    </ol>
+                </td>
+                <td id="rate_content">
+                    <ol id="rate">
+                        <li id="s_name">200/kg</li>
+                        <li id="s_name">150/kg</li>
+                        <li id="s_name">350/kg</li>
+                        <li id="s_name">250/kg</li>
+                        <li id="s_name">120/kg</li>
+                        <li id="s_name">200/kg</li>
+                        <li id="s_name">550/kg</li>
+                        <li id="s_name">200/kg</li>
+                        <li id="s_name">160/kg</li>
+                    </ol>
+                </td>
+            </tr>
+
+        </table>
+        <fieldset>
+            <legend>Order Online</legend>
+
+            <form id="order_online">
+                Buyer Name<br>
+                <input type="text" name="name" id="order_input"><br><br>
+                Mobile No.<br>
+                <input type="number" name="mobile" id="order_input"><br><br>
+                Choose Sweets<br>
+
+                <select name="choose_sweets" id="order_input">
+                    <option value="rasgulla">Rasgulla</option>
+                    <option value="Barfee">Barfee</option>
+                    <option value="Ras Malai">Ras Malai</option>
+                    <option value="rasgulla">Rasgulla</option>
+                </select>
+
+                <br><br>
+                Quantity<br>
+                <input type="text" name="quantity" id="order_input">
+                <br><br>
+
+                Address<br>
+
+                <textarea name="address"></textarea>
+                <br><br>
+                <input type="submit" value="Order Now!" id="submit_btn">
+            </form>
+
+        </fieldset>
+
+        <div id="abt_us">
+            <h1 align="center" id="abt-title">About Us</h1>
+            <hr>
+            <p id="abt_text">
+                On the Insert tab, the galleries include items that are designed to coordinate with the overall look of
+                your
+                document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other
+                document
+                building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current
+                document
+                look.
+                You can easily change the formatting of selected text in the document text by choosing a look for the
+                selected
+                text from the Quick Styles gallery on the Home tab. You can also format text directly by using the other
+                controls on the Home tab. Most controls offer a choice of using the look from the current theme or using
+                a
+                format that you specify directly.
+                To change the overall look of your document, choose new Theme elements on the Page Layout tab. To change
+                the
+                looks available in the Quick Style gallery, use the Change Current
+
+            </p>
+        </div>
+
+    </section>
+    <footer>
+            <!-- Videos -->
+            <div id="video" class="vid">
+                <h1 style=" color:gray; text-align:center;">Videos</h1>
+                <ul>
+                    <div><iframe src="https://www.youtube.com/embed/v4ZRuZgFrZA?si=utvKlUXgbn4-t2bF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0"></iframe>
+                        <h3 style="color: gray; text-align:center"> Kaju Katli recipe </h3>
+                    </div>
+                    <div><iframe src="https://www.youtube.com/embed/_tDTAfrVIRc?si=wQ9V7sPbOaq_v3gD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0"></iframe>
+                        <h3 style="color: gray; text-align:center">Rasmalai recipe</h3>
+                    </div>
+                </ul>
+            </div>
+            <hr>
+
+    </footer>
+    <img src="social media/twitter-round-icon.png" alt="" height="30" />
+    <a href="https://twitter.com/home">twitter</a></div>
+    <img src="social media/instagram-color-icon.png" alt="" height="30" />
+    <a href="https://www.instagram.com/">instagram</a></div>
+    <img src="social media/facebook-round-color-icon.png" alt="" height="30" />
+    <a href="https://www.facebook.com/">facebook</a></div>
+    <img src="social media/google-color-icon.png" alt="" height="30" />
+    <a href="https://www.google.co.in/">browser</a></div>
+    <img src="social media/whatsapp-round-color-icon.png" alt="" height="30" />
+    <a src="https://web.whatsapp.com/">whatsapp</a>
+</body>
+
+</html>
